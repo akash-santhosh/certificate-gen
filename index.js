@@ -1,5 +1,3 @@
-
-
 console.log("hello")
 const userName = document.getElementById("name");
 const submitBtn = document.getElementById("submitBtn");
