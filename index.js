@@ -26,7 +26,7 @@ const generatePDF = async (name) => {
 
     
   //get font
-  const fontBytes = await fetch("Sanchez-Regular.ttf").then((res) =>
+  const fontBytes = await fetch("PermanentMarker-Regular.ttf").then((res) =>
   res.arrayBuffer()
 );
   // Embed our custom font in the document
@@ -46,6 +46,6 @@ const generatePDF = async (name) => {
  
   // Serialize the PDFDocument to bytes (a Uint8Array)
   const pdfDataUri = await pdfDoc.saveAsBase64({ dataUri: true });
-  saveAs(pdfDataUri,"newcertificate.pdf")
+  saveAs(pdfDataUri,"Certificate_flattenthecurve.pdf")
 };
 
