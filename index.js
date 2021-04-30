@@ -35,8 +35,8 @@ const generatePDF = async (name) => {
  
    // Draw a string of text diagonally across the first page
    firstPage.drawText(name, {
-     x: 790,
-     y: 250,
+     x: 750,
+     y: 300,
      size: 35,
      font: SanChezFont
    });
